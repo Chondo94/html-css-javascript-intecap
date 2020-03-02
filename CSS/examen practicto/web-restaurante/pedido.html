@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+    <title>Pedido</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Mesero</a>
+        <a class="navbar-brand" href="cocina.html">Cocina</a>
+        <a class="navbar-brand" href="#">Administracion</a>
+
+    </nav>
+
+    <h1 id="pedido" style="text-align: center; margin-top: 15px;">Pedido</h1>
+
+    <div class="container">
+        <form action="factura.html" method="POST">
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <label class="input-group-text" for="inputGroupSelect01">Categoria</label>
+                </div>
+                <select class="custom-select" id="inputGroupSelect01">
+                    <option selected>Seleccione el tipo</option>
+                    <option value="1">Española</option>
+                    <option value="2">Italiana</option>
+                    <option value="3">Mexicana</option>
+                    <option value="4">China</option>
+                </select>
+            </div>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <label class="input-group-text" for="inputGroupSelect01">Tipo</label>
+                </div>
+                <select class="custom-select" id="inputGroupSelect01">
+                    <option selected>Seleccione el Platillo</option>
+                    <option value="1">Desayuno</option>
+                    <option value="2">Carne</option>
+                    <option value="3">Entrada</option>
+                    <option value="4">bebida</option>
+                    <option value="5">Ensalada</option>
+                    <option value="6">Marisco</option>
+                    <option value="7">Pasta</option>
+                    <option value="8">Menu Infantil</option>
+                </select>
+            </div>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <label class="input-group-text" for="inputGroupSelect01">Platillo</label>
+                </div>
+                <select class="custom-select" id="inputGroupSelect01">
+                    <option selected>Seleccione el Platillo</option>
+                    <option value="1">Huevos Rancheros</option>
+                    <option value="2">Panqueques</option>
+                    <option value="3">Churrasco</option>
+                </select>
+            </div>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <label class="input-group-text" for="inputGroupSelect01">Numero de Mesa</label>
+                </div>
+                <select class="custom-select" id="inputGroupSelect01">
+                    <option selected>Seleccione La Mesa</option>
+                    <option value="2">Mesa 1</option>
+                    <option value="3">Mesa 2</option>
+                    <option value="4">Mesa 3</option>
+                    <option value="5">Mesa 4</option>
+                    <option value="6">Mesa 5</option>
+                    <option value="7">Mesa 6</option>
+                    <option value="8">Mesa 7</option>
+                    <option value="8">Mesa 8</option>
+                    <option value="8">Mesa 9</option>
+                    <option value="8">Mesa 10</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <label for="TextInput">Nombre de cliente</label>
+                        <input type="text" id="TextInput" class="form-control" placeholder="Ingrese nombre del cliente">
+                    </div>
+                    <div class="col-lg-4">
+                        <label for="TextInput">NIT</label>
+                        <input type="number" id="TextInput" class="form-control" placeholder="Ingrese NIT">
+                    </div>
+                </div>
+            </div>
+            <div class="input-group">
+                <!-- <input type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)" value="Total"> -->
+                <div class="input-group-append">
+                    <!-- <span class="input-group-text">Total</span>
+                    <span class="input-group-text">Q 220.00</span> -->
+                </div>
+            </div>
+            <br>
+            <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog"
+                    aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLongTitle">Detalles de pedido</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <ul>
+                                    <li>Española</li>
+                                    <li>Desayuno</li>
+                                    <li>Huevos al ranchero</li>
+                                    <li>Mesa 5</li>
+                                    <li>jbuezo</li>
+                                    <!-- <li>Total Q220.00</li> -->
+                                </ul>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModalLong">
+                    Verificar
+                </button>
+                <input type="submit" class="btn btn-dark" value="Facturar">
+    </div>
+    </form>
+    </div>
+
+    <script src="bootstrap-4.3.1-dist/js/jquery-3.4.1.min.js"></script>
+    <script src="bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+    <script src="bootstrap-4.3.1-dist/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>

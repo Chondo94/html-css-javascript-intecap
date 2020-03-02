@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Turismo</title>
+        <style></style>
+    </head>
+
+    <body>
+        <!-- 
+        Lista de etiquetas
+            <strong></strong>
+            <textarea></textarea>
+            <span></span>
+            <style></style>
+            <hr>
+            <mark></mark>
+            <footer></footer>
+            <article></article>
+            <aside></aside>
+            <div></div>
+         -->
+        <section>
+            <h1>Bienvenido a la pagina</h1>
+            <p>Turismo es una pagina dedicada a presentar los diferentes
+                sitios <br> de la comunidad
+            </p>
+        </section>
+        <section>
+            <nav>
+                <ul>
+                    <li><a href="TurismoHome.html">Home</a></li>
+                    <li><a href="turismoProducts.html">Products</a></li>
+                    <li><a href="turismoCompany.html">Company</a></li>
+                    <li><a href="turismoBlog.html">Blog</a></li>
+                    <li><mark><a href="turismoRegistro.html">Registro de Usuario</a></mark></li>
+                </ul>
+            </nav>
+        </section>
+        <section>
+            
+            <form action="GuardarDatos.html" method="POST">
+                <h2>Formulario de contacto</h2>
+                <p>
+                  <strong>Nombre</strong> <input type="text" id="nombre" name="nombre" placeholder="Ej. Juan"> 
+                </p>
+                <p>
+                   <strong>Apellido</strong> <input type="text" id="apellido" name="apellido" placeholder="Ej. Lopez"> 
+                 </p>
+                 <p>
+                    <strong>Telefono</strong> <input type="number" id="telefono" name="telefono" placeholder="Ej. 34543553"> 
+                 </p>
+                 <p>
+                    <strong>Direccion</strong> <input type="text" id="direccion" name="direccion" placeholder="Ej. los pinos, esquipulas"> 
+                 </p>
+                 <p>
+                    <strong>Fecha</strong> <input type="date" id="fecha" name="fecha" placeholder="Ej. 01/03/2020"> 
+                 </p>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Escriba aca un comentario"></textarea>
+                 <input type="submit" value="enviar">
+            </form>
+        </section>
+        <hr/>
+        <div>
+            <h2>Galeria</h2>
+            <img height="350" width="300" src="imagenes/1.jpg" alt="losArcos">
+            <img height="350" width="300" src="imagenes/3.jpg" alt="girasol">
+            <img height="350" width="300" src="imagenes/4.jpg" alt="basilica">
+            
+            <h2>Videos</h2>
+            <video src="videos/1.mp4" height="350" width="300" controls></video>
+
+            <h2>Audio</h2>
+            <audio src="audios/1.mp3" controls autoplay loop></audio>
+        </div>
+    </body>
+</html>

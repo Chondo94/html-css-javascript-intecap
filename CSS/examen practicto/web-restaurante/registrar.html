@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="login.html">
+            <img src="img/login.png" width="30" height="30" class="d-inline-block align-top" alt="">
+        </a>
+        <a class="navbar-brand" href="login.html">
+            Iniciar Sesion
+        </a>
+    </nav>
+    <br>
+    <div class="container">
+        <div class="col-lg-12">
+            <h1 style="text-align: center; margin-top: 15px;">Resgistrame</h1>
+
+            <form action="pedido.html">
+                <fieldset enable>
+                    <div class="form-group">
+                        <label for="TextInput">Nombre y Apellidos</label>
+                        <input type="text" id="TextInput" class="form-control" placeholder="Ingrese su nombre completo">
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <label for="TextInput">Fecha de Nacimiento</label>
+                                <input type="date" id="TextInput" class="form-control"
+                                    placeholder="Ingrese su Fecha de Nacimiento">
+                            </div>
+                            <div class="col-lg-7">
+                                <label for="TextInput">Direccion</label>
+                                <input type="text" id="TextInput" class="form-control"
+                                    placeholder="Ingrese su Direccion">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <label for="TextInput">Telefono</label>
+                                <input type="number" id="TextInput" class="form-control"
+                                    placeholder="Ingrese su numero telefonico">
+                            </div>
+                            <div class="col-lg-4">
+                                <label for="TextInput">Area de Trabajo</label>
+                                
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                    </div>
+                                    <select class="custom-select" id="inputGroupSelect01">
+                                        <option value="2">Administracion</option>
+                                        <option value="1">Cocina</option>
+                                        <option value="3">Mesero</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <label for="TextInput">Usuario</label>
+                                <input type="text" id="TextInput" class="form-control" placeholder="Ingrese un usuario">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <label for="TextInput">Correo Electronico</label>
+                                <input type="email" id="TextInput" class="form-control" placeholder="Ingrese su email">
+                            </div>
+                            <div class="col-lg-6">
+                                <label for="TextInput">Contraseña</label>
+                                <input type="password" id="TextInput" class="form-control"
+                                    placeholder="Ingrese su contraseña">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-check">
+                            <label class="form-check-label" for="FieldsetCheck">
+                                <img src="img/capchat.png" width="60px" alt=""><br>
+                                <input class="form-check-input" type="checkbox" id="FieldsetCheck" enable>
+                                capcha
+                            </label>
+                        </div>
+                    </div>
+                    <input type="submit" type="submit" class="btn btn-primary" value="Registrar">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

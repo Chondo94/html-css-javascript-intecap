@@ -1,0 +1,26 @@
+    #pedido{
+        text-shadow: 2px 2px 5px red;
+      }
+
+    #navegacion{
+        background-color: black;
+        color: white;
+    }
+
+    body{
+        background-image: linear-gradient(to bottom right, #2581FF, #00EFA4);
+    }
+
+    .titulos{
+        text-align: center;
+    }
+
+    .titulos:hover{
+        background-color: #04D6A6;
+    }
+
+    h1{
+        text-align: center;
+    }
+
+    

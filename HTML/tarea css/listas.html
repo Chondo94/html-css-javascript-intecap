@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>listas en css</title>
+    <style>
+        ul.a {
+          list-style-type: circle;
+        }
+        
+        ul.b {
+          list-style-type: square;
+        }
+        
+        ol.c {
+          list-style-type: upper-roman;
+        }
+        
+        ol.d {
+          list-style-type: lower-alpha;
+        }
+        ul.listaDos {
+  list-style-image: url('sqpurple.gif');
+  background: #3399ff;
+  padding: 20px;
+  width: 50%;
+}
+        </style>
+</head>
+<body>
+  <h1 style="color: white; background-color: black; width: 50%;">Seleccione que estilo CSS desea ver</h1>
+  <section>
+      <nav>
+          <a href="colores.html"><input type="submit" value="Colores"></a>
+          <a href="listas.html"><input type="submit" value="Listas"></a>
+          <a href="tablas.html"><input type="submit" value="Tablas"></a>
+          <a href="marjenes.html"><input type="submit" value="Margenes"></a>
+          <a href="formularios.html"><input type="submit" value="Formularios"></a>
+      </nav>
+  </section>
+  
+    <p>Ejemplo de la lista desordana con css</p>
+<ul class="a">
+  <li>Cafe</li>
+  <li>Te</li>
+  <li>Coca Cola</li>
+</ul>
+
+<ul class="b">
+  <li>Cafe</li>
+  <li>Te</li>
+  <li>Coca Cola</li>
+</ul>
+
+<p>Example of ordered lists:</p>
+<ol class="c">
+  <li>Cafe</li>
+  <li>Te</li>
+  <li>Coca Cola</li>
+</ol>
+
+<ol class="d">
+  <li>Cafe</li>
+  <li>Te</li>
+  <li>Coca Cola</li>
+</ol>
+
+<ul class="listaDos">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ul>
+
+    
+</body>
+</html>
